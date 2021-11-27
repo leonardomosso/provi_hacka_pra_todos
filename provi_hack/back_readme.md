@@ -18,7 +18,7 @@
         "complemento": string,
         "bairro": string,
         "cidade": string,
-        "estado":string(PB,SC,SP...)
+        "uf":string(PB,SC,SP...)
         "cep": string,
         "tipo_usuário": ["voluntario","ponto de apoio", "estudante"]
     }
@@ -67,7 +67,7 @@
         "complemento": string,
         "bairro": string,
         "cidade": string,
-        "estado":string(PB,SC,SP...)
+        "uf":string(PB,SC,SP...)
         "cep": string,
         "tipo_usuario": string,
         "bio": string,
@@ -88,14 +88,14 @@
   
 
 * Listar voluntários por local (PB/SC/SP/PR...)
-[GET] /api/voluntarios/:cidade&estado
+[GET] /api/voluntarios/:cidade&uf
 response 200
     [{
         "usuario": string,                
         "email":string,
         "bairro": string,
         "cidade": string,
-        "estado":string(PB,SC,SP,RJ,PE)                
+        "uf":string(PB,SC,SP,RJ,PE)                
         "habilidade": string,
         "bio": string,
         ***"cursos": [...cursos],        
@@ -107,14 +107,14 @@ response 200
     }
 
 * Listar pontos de apoio por local (PB/SC/SP/PR...)
-[GET] /api/ponto_apoio/:cidade&estado
+[GET] /api/ponto_apoio/:cidade&uf
 response 200
     [{
         "usuario": string,                
         "email":string,
         "bairro": string,
         "cidade": string,
-        "estado":string(PB,SC,SP...)                
+        "uf":string(PB,SC,SP...)                
         "espaço": string,
         "bio": string,      
         
@@ -127,14 +127,14 @@ response 200
 
 * Listar estudante por local (PB/SC/SP/PR...)
 * header bear{token} 
-[GET] /api/estudante/:cidade&estado
+[GET] /api/estudante/:cidade&uf
 response 200
     [{
         "usuario": string,                
         "email":string,
         "bairro": string,
         "cidade": string,
-        "estado":string(PB,SC,SP...)                
+        "uf":string(PB,SC,SP...)                
         "espaço": string,
         "bio": string, 
         "aprender":["string"],
