@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CadastroEngajador from '../CadastroEngajador/CadastroEngajador';
 import CadastroPage from '../CadastroPage/CadastroPage';
 import HomePage from '../HomePage/Home';
+import Login from '../Login';
 
 
 const Router = () => {
@@ -10,9 +11,11 @@ const Router = () => {
         <BrowserRouter>
         {/* Páginas dos ROUTERS. */}
             <Routes>
-                <Route path = "/" element={<HomePage/>}/>
-                <Route path = "/cadastro" element={<CadastroPage/>}/>
-                <Route path = "/cadastro-engajador" element={<CadastroEngajador/>}/>
+                <Route path = "/" element={<HomePage />}/>
+                <Route path = "/cadastro" element={<CadastroPage />}/>
+                <Route path = "/cadastro" element={<CadastroPage />}/>
+                <Route path = "/cadastro-engajador" element={<CadastroEngajador />}/>
+                <Route path = "/login" element={<Login />}/>
             </Routes>
         </BrowserRouter>
 

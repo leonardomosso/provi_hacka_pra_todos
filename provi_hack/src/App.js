@@ -1,15 +1,15 @@
 import React from 'react';
 import Router from './Routes/Router';
-import { ThemeProvider } from '@material-ui/core/styles';
-import theme from './constants/theme'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      {/* Leva para o Router onde as páginas são organizadas.  */}
+    <div>
       <Router/>
-    </ThemeProvider>
+      <ToastContainer />
+    </div>
   );
 }
 
