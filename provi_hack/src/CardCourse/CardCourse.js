@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components"
-import share from "../assets/share.png"
+import location from "../assets/location.svg"
+import calendar from "../assets/calendar.svg"
 
 const Card = styled.div`
+background-color: #ffffff;
 display: flex;
 width: 100%;
 flex-direction: column;
+margin-right: 20px;
 `
 const CardImageContainer = styled.div`
 
@@ -23,7 +26,21 @@ const CardTextContainer = styled.div`
 `
 const CardText = styled.p`
 `
+const CardLocationContainer = styled.div`
+`
+const CardLocation = styled.img`
+width: 20px;
+height: 20px;
+`
 
+// const CardFooterContainer = styled.div`
+// `
+// const CardLocation = styled.img`
+// `
+// const CardCity = styled.span`
+// `
+// const CardCalendar = styled.img`
+// `
 
 const CardCourse = (props) => {
 
@@ -38,16 +55,13 @@ const CardCourse = (props) => {
       <CardTextContainer>
         <CardText>{props.texto}</CardText>
       </CardTextContainer>
-      <CardImageContainer>
-        <CardImage src={share} />
-      </CardImageContainer>
+      {/* <CardFooterContainer>
+        <CardLocation src={location} />
+        <CardCity></CardCity>
+        <CardCalendar src={calendar} />
+      </CardFooterContainer> */}
     </Card>
-
-
   )
-
-
-
 }
 
 export default CardCourse;
