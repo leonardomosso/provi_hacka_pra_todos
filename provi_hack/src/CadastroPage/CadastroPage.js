@@ -5,7 +5,7 @@ import makeStyles from "./makeStyles";
 import RadioButtonsGroup from "./RadioButtonsGroup";
 import { styles } from "./styles";
 import handleLoardViaCep from "./utils";
-import Input from "../Components/Input/index"
+// import Input from "../Components/Input/index"
 
 const { DivSection, DivImage, CadastroContainer, FormContainer, FormTitle, FormatDivision, Buttons } = styles;
 
