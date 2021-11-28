@@ -1,50 +1,84 @@
 import React from "react";
 import styled from 'styled-components';
-import {useNavigate} from 'react-router-dom';
+import Header from "../Header/Header";
+import tec1 from "../assets/tec1.png";
+import desenvolvimetoMobile from "../assets/desenvolvimento-mobile.png";
+import design from "../assets/design.png";
+import volunteer1 from "../assets/volunteer1.png";
+import CardCourse from "../CardCourse/CardCourse";
+import CardAbilities from "../CardAbilities/CardAbilities";
+
 
 const GeneralContainer = styled.div`
     height: 100vh;
 `
-const DivHeader = styled.div`
-    display: flex; 
-    justify-content: space-evenly;
-`
-const DivDescricaos = styled.div`
+
+const CourseDisplay = styled.div`
     display: flex;
-    height: 50%;
-    background-color: yellow;
+    justify-content: space-evenly;
+
+
 `
-const DivDescrições = styled.div`
-    border: solid black 1px;
-    padding: 5px;
+
+const AbilitiesDisplay = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+
 `
+
+
 const HomePage = () => {
-    const navigate = useNavigate()
-    const goToCadastro = () =>{
-        navigate('/cadastro')
-    }
     return (
         <GeneralContainer>
-            <DivHeader>
-                <button onClick={goToCadastro}>Cadastro</button>
-                <h1>
-                    Diversidade Máxima
-                </h1>
-            </DivHeader>
-            <DivDescricaos>
-                <DivDescrições>
-                    <h3>Missão:</h3>
-                    <p>
-                        Estimular o acolhimento, a arte, a geração de renda e autonomia das mulheres da comunidade por meio de oficinas de artesanato, ações e atividades que garantam o exercício da cidadania
-                    </p>
-                </DivDescrições>
-                <DivDescrições>
-                    <h3>Visão</h3>
-                    <p>
-                        Favorecer a intervenção social, educativa, cultural e de saúde junto às mulheres, famílias e comunidade do Morro do Sossego e seu entorno a fim de contribuir para a transformação social.
-                    </p>
-                </DivDescrições>
-            </DivDescricaos>
+            <Header/>
+            <AbilitiesDisplay>
+
+                <CardAbilities
+                    img={volunteer1}
+                    titulo={"Faça Parte"}
+                    texto={"Amplie suas oportunidades com os cursos que oferecemos"}
+
+                />
+                <CardAbilities
+                    img={volunteer1}
+                    titulo={"Voluntário"}
+                    texto={"Amplie suas oportunidades com os cursos que oferecemos"}
+
+                />
+                <CardAbilities
+                    img={volunteer1}
+                    titulo={"Faça Parte"}
+                    texto={"Amplie suas oportunidades com os cursos que oferecemos"}
+
+                />
+                <CardAbilities
+                    img={volunteer1}
+                    titulo={"Faça Parte"}
+                    texto={"Amplie suas oportunidades com os cursos que oferecemos"}
+
+                />
+            
+            </AbilitiesDisplay>
+            <CourseDisplay>
+                <CardCourse 
+                    img={tec1} 
+                    titulo={"Marketing Digital"} 
+                    texto={"Se você é criativo, ligado em tecnologia e artes visuais venha fazer parte da construção do nosso website."}
+                    
+                    />
+                <CardCourse
+                    img={desenvolvimetoMobile} 
+                    titulo={"Desenvolvimento Web"} 
+                    texto={"Se você é criativo, ligado em tecnologia e artes visuais venha fazer parte da construção do nosso website."}
+                />
+                <CardCourse 
+                    img={design} 
+                    titulo={"Web Design"} 
+                    texto={"Se você é criativo, ligado em tecnologia e artes visuais venha fazer parte da construção do nosso website."}
+                />
+              
+            </CourseDisplay>
         </GeneralContainer>
     )
 }

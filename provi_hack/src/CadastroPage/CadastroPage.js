@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import TextField from '@material-ui/core/TextField';
 import styled from 'styled-components';
+import Header from '../Header/Header';
 
 const MainContainer = styled.div`
     display: flex; 
@@ -26,10 +27,11 @@ const CadastroPage = () => {
     }
     return (
         <div>
+            <Header/>
             <button onClick={goToHome}>Back</button>
             <MainContainer>
                 <InputsContainer>
-                    <TextField id="outlined-basic" label="Nome" variant="outlined" />
+                    <TextField borderColor="primary" id="outlined-basic" label="Nome" variant="outlined" />
                     <TextField id="outlined-basic" label="E-mail" variant="outlined" />
                     <TextField id="outlined-basic" label="CEP" variant="outlined" type="number"/>
                     <TextField id="outlined-basic" label="Logradouro" variant="outlined" />
