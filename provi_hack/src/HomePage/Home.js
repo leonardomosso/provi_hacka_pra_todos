@@ -12,19 +12,15 @@ import CardAbilities from "../CardAbilities/CardAbilities";
 const GeneralContainer = styled.div`
     height: 100vh;
 `
-
 const CourseDisplay = styled.div`
     display: flex;
     justify-content: space-evenly;
-
-
 `
 
 const AbilitiesDisplay = styled.div`
     display: grid;
+    background-color: blue;
     grid-template-columns: repeat(2, 1fr);
-   
-
 `
 
 

@@ -7,9 +7,7 @@ const Card = styled.div`
     width: 600px;
     background-color: #EF6F7E;
     border-radius: 20px;
-     
 `
-
 
 const CardAbilities = (props) => {
     console.log(props)
@@ -25,11 +23,7 @@ const CardAbilities = (props) => {
                 </div>
             </Card>
         </div>
-
     )
-
-
-
 }
 
 export default CardAbilities;
