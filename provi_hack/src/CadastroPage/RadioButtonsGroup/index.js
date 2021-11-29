@@ -7,7 +7,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 export default function RadioButtonsGroup({ handleChange }) {
     return (
         <FormControl component="fieldset">
-            <FormLabel component="legend">*Tipos (Renomear)</FormLabel>
+            <FormLabel component="legend">Perfil</FormLabel>
             <RadioGroup
                 aria-label="gender"
                 defaultValue="Estudante"

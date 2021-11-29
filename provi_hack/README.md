@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# provi_hacka_pra_todos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PROJETO
+    
+  A Plataforma “Mulheres engajadas” conecta mulheres de comunidades carentes que necessitam ter acesso a conhecimentos, principalmente tecnológicos, que podem criar tecnologias, mas também usar em seu contexto social e econômico. Para disseminação desse conhecimento a plataforma possibilitará a conexão com pessoas voluntárias, como por exemplo instrutores, mentores, apoiadores, que possibilitarão que esse conhecimento atinja o público-alvo e conecta os pontos de apoio com o mínimo de estrutura, como uma ONG, um salão, uma garagem, uma escola.
 
-## Available Scripts
+  Objetivo é  ofertar cursos/palestras/conteúdos, principalmente tecnológicos, presenciais ou on-line, para mulheres de baixa renda, por meio de rede de pessoas voluntárias.
 
-In the project directory, you can run:
+  Na plataforma terá os cadastros dos atores envolvidos, e lista dos cursos oferecidos, e formação da turma para o evento.
+  Neste momento não estará incluso, dentro da plataforma, a excecução do curso em si, mas sim o contato entre as partes e lista dos inscritos.
+  Sendo o curso e sua apresentação ficará a cretério e responsabilidade do voluntário instrutor / ponto de apoio.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Neste versão teremos 3 tipo de usuário, que ao fazer o registro deverá ser informado um deles:
+   * voluntario
+      - Voluntários é a comunidade geral que deseja contribuir de alguma forma para o projeto, a ideia da plataforma é ser regional, assim facilita o voluntário atuar na sua região, ou escolher uma região que deseja prestar seus serviços sociais.
+      - exemplos de voluntários: instrutores, divulgadores, mentores, auxiliares ...
+   
+   *  ponto_de_apoio
+      - Ponto de apoio, são estrtruturas físicas que estão situados nas regiões,
+       onde ocorrerão os encontros para os eventos presenciais.
+      - exemplos: ONGS, escolas, igrejas, associações ...
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  *  Estudantes 
+      -  São as mulheres que tenham interesses de participar dos eventos, em seu perfil poderá ver os cursos que está
+      -  participando, ou já finalizado.
+      -  Também é possível incluir os saberes que gostaria de aprender.
+  
+ 
+## Instalação projeto local
+ 
+ Projeto foi desenvolvido em NodeJs.
+ 
+ ### Processo de instalação:
 
-### `yarn test`
+- Clonar repositório, 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Instalar dependẽncias:
 
-### `yarn build`
+> npm i
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Rodar a api, no diretório ".../provi_hacka_pra_todos/provi_hack" :
+  
+> npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Irá rodar na porta 8000 (http://localhost:3000/)
+    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## EndPoints
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Favor olhar a documentação da api em :
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://github.com/smarticogit/provi_hacka_pra_todos_back/blob/main/README.md
