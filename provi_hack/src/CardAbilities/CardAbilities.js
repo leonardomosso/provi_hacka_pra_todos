@@ -2,28 +2,59 @@ import React from "react";
 import styled from "styled-components"
 
 
-const Card = styled.div`
+const CardContainer = styled.div`
     display:flex;
-    width: 600px;
+    width: 500px;
     background-color: #EF6F7E;
     border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    `
+
+const CardContainerImage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  `
+
+const CardImage = styled.img`
+  width: 100px;
+  height: 100px;
 `
 
-const CardAbilities = (props) => {
-    console.log(props)
-    return (
-        <div>
-            <Card>
-                <div>
-                    <img src={props.img} alt="" />
-                </div>
-                <div>
-                    <h1>{props.titulo}</h1>
-                    <p>{props.texto}</p>
-                </div>
-            </Card>
-        </div>
-    )
+const CardInfo = styled.div`
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    `
+
+const CardInfoText = styled.h1`
+font-weight: 900;
+font-size: 36px;
+margin: 0;
+
+`
+
+const CardInfoParag = styled.p`
+width: 300px;
+font-size: 24px;
+margin: 0;
+
+`
+
+
+const CardAbilities = ({ img, titulo, texto }) => {
+  return (
+    <CardContainer>
+      <CardContainerImage>
+        <CardImage src={img} alt={`${titulo}`} />
+      </CardContainerImage>
+      <CardInfo>
+        <CardInfoText>{titulo}</CardInfoText>
+        <CardInfoParag>{texto}</CardInfoParag>
+      </CardInfo>
+    </CardContainer>
+  )
 }
 
 export default CardAbilities;
