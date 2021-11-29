@@ -12,16 +12,30 @@ export default function Login() {
     }
 
     const [formLogin, SetFormLogin] = useState({
-        usuario: "", senha: ""})  
+        usuario: "", senha: ""
+    })
 
     function handleSubmit(e) {
         e.preventDefault()
         console.log(formLogin)
-        
-    if (!formLogin.usuario || !formLogin.senha) {
-        toast.messageError("E-mail e senha são obrigatórios");
-      }
-    }    
+
+        if (!formLogin.usuario || !formLogin.senha) {
+            toast.messageError("E-mail e senha são obrigatórios");
+        }
+    }
+
+    async function logar() {
+        const { usuario, senha } = formLogin;
+        const resultado = await fetch(`http://localhost:8000/api/login`, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(formLogin)
+        });
+        console.log(resultado)
+        console.log(formLogin, "formlogin")
+    };
 
     return (
         <DivSection>
@@ -46,7 +60,7 @@ export default function Login() {
                         name="senha"
                         onChange={(event) => handleChange(event.target)}
                     />
-                    <Buttons>Cadastrar</Buttons>
+                    <Buttons onClick={logar}>Entrar</Buttons>
                 </FormContainer>
             </CadastroContainer>
             <DivImage>

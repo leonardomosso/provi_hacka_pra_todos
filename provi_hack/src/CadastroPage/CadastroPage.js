@@ -21,6 +21,9 @@ const CadastroPage = () => {
   const goToHome = () => {
     navigate("/")
   }
+  const goTologin = () => {
+    navigate("/login")
+  }
 
   useEffect(() => {
     if (cep.length === 8) {
@@ -51,18 +54,8 @@ const CadastroPage = () => {
       },
       body: JSON.stringify(form)
     });
+    goTologin();
     limparFormulario();
-  };
-
-  async function logar() {
-    const { usuario, senha } = form;
-    const resultado = await fetch(`http://localhost:8000/api/login`, {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify(form)
-    });
   };
 
   function limparFormulario() {
