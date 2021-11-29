@@ -33,8 +33,6 @@ export default function Login() {
             },
             body: JSON.stringify(formLogin)
         });
-        console.log(resultado)
-        console.log(formLogin, "formlogin")
     };
 
     return (

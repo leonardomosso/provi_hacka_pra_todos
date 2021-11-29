@@ -75,7 +75,7 @@ const CadastroPage = () => {
 
           <TextField
             className={classes.input}
-            sx={{ width: "80%" }}
+            sx={{ width: "80%", height: "20px" }}
             id="outlined-basic"
             label="*Nome"
             variant="outlined"
@@ -84,7 +84,7 @@ const CadastroPage = () => {
             onChange={(event) => handleChange(event.target)}
           />
           <TextField
-            sx={{ width: "80%" }}
+            sx={{ width: "80%", height: "20px" }}
             id="outlined-basic"
             label="*Usuário"
             variant="outlined"
@@ -93,7 +93,7 @@ const CadastroPage = () => {
             onChange={(event) => handleChange(event.target)}
           />
           <TextField
-            sx={{ width: "80%" }}
+            sx={{ width: "80%", height: "20px" }}
             id="outlined-basic"
             label="E-mail"
             variant="outlined"
@@ -102,7 +102,7 @@ const CadastroPage = () => {
             onChange={(event) => handleChange(event.target)}
           />
           <TextField
-            sx={{ width: "80%" }}
+            sx={{ width: "80%", height: "20px" }}
             id="outlined-basic"
             label="Telefone"
             variant="outlined"
@@ -113,7 +113,7 @@ const CadastroPage = () => {
 
           <FormatDivision>
             <TextField
-              sx={{ width: "50%" }}
+              sx={{ width: "50%", height: "20px" }}
               id="outlined-basic"
               label="CEP"
               variant="outlined"
@@ -122,7 +122,7 @@ const CadastroPage = () => {
               onChange={(event) => setCep(event.target.value)}
             />
             <TextField
-              sx={{ width: "50%" }}
+              sx={{ width: "50%", height: "20px" }}
               id="outlined-basic"
               label="Estado"
               variant="outlined"
@@ -134,7 +134,7 @@ const CadastroPage = () => {
 
           <FormatDivision>
             <TextField
-              sx={{ width: "50%" }}
+              sx={{ width: "50%", height: "20px" }}
               id="outlined-basic"
               label="Cidade"
               variant="outlined"
@@ -143,7 +143,7 @@ const CadastroPage = () => {
               onChange={(event) => setCep(event.target)}
             />
             <TextField
-              sx={{ width: "50%" }}
+              sx={{ width: "50%",height: "20px" }}
               id="outlined-basic"
               label="Bairro"
               variant="outlined"
@@ -156,7 +156,7 @@ const CadastroPage = () => {
           <RadioButtonsGroup handleChange={handleChange} />
 
           <TextField
-            sx={{ width: "80%" }}
+            sx={{ width: "80%", height: "20px" }}
             id="outlined-basic"
             label="*Senha"
             variant="outlined"

@@ -58,9 +58,9 @@ const AbilitiesDisplay = styled.div`
   `
 
 const CourseDisplay = styled.div`
-background-color: #f9f9f9;
+  background-color: #f9f9f9;
       display: flex;
-  max-width: 1200px;
+      width: 100%px;
       justify-content: space-evenly;
       padding: 0 100px;
       `

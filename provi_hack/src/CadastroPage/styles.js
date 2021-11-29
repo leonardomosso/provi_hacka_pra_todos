@@ -4,9 +4,10 @@ import pictureWoman from "../assets/picture.svg";
 export const styles = {
      DivSection: styled.section`
         min-width: 100vw;
-        height: 100vh;
+        // height: 100vh;
         display: flex; 
         justify-content: center;
+        font-family: "Nunito", sans-serif;
     `,
     
     CadastroContainer : styled.div`
@@ -14,13 +15,14 @@ export const styles = {
         justify-content: center;
         width: 50%;
         height: 100%;
+        padding: 40px 0;
     `,
     
     FormContainer : styled.form`
         width: 70%;
         display:flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 40px;
         align-items: center;
         justify-content: center;
     `,
@@ -28,7 +30,7 @@ export const styles = {
     DivImage : styled.div`
         display: flex; 
         width: 50%;
-        height: 100%;
+        // height: 100%;
         background: rgb(252, 26, 158);
         align-items: center;
         justify-content: center;
@@ -44,8 +46,8 @@ export const styles = {
         gap: 10px
     `,
     Buttons : styled.button`
-        width: 50%;
-        height: 43px;
+        width: 80%;
+        height: 40px;
         color: rgb(255, 255, 255);
         background: #EF5350;
         border: 1px solid #EF5350;

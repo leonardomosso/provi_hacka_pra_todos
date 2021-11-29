@@ -35,10 +35,20 @@ const DivHeaderLeft = styled.div`
 const DivHeaderRigthSignUp = styled.div`
     background-color: #B53030;
     border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 `
+const Span = styled.span`
+    margin-right: 20px;
+    color: #FFFFFF;
+`
+const SpanButton = styled.span`
+    color: #FFFFFF;
+`
 
- 
 const Header = () => {
     const navigate = useNavigate()
     const goToCadastro = () => {
@@ -48,17 +58,22 @@ const Header = () => {
         <DivHeader>
 
             <DivHeaderLeft>
-                <Button size="large" color={"secondary"}>Diversidade</Button>
+                <Span>Diversidade</Span>
+                {/* <Button size="large" color={"secondary"}>Diversidade</Button> */}
             </DivHeaderLeft>
 
             <DivHeaderRigth>
                 <div>
-                    <Button size="large"  color={"secondary"} >Quem Somos</Button>
+                    <Span>Quem Somos</Span>
+                    <Span>Cidade</Span>
+                    <Span>Login</Span>
+                    <Span>Cadastro</Span>
+                    {/* <Button variant="contained"></Button>
                     <Button size="large" color={"secondary"} >Login</Button>
-                    <Button size="large" color={"secondary"} >Cadastro</Button>
+                    <Button size="large" color={"secondary"} >Cadastro</Button> */}
                 </div>
                 <DivHeaderRigthSignUp>
-                    <Button color={"secondary"} onClick={goToCadastro}>Cadastra-se</Button>
+                    <SpanButton onClick={goToCadastro}>Cadastra-se</SpanButton>
                 </DivHeaderRigthSignUp>
             </DivHeaderRigth>
         </DivHeader>

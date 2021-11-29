@@ -7,6 +7,7 @@ export const styles = {
         height: 100vh;
         display: flex; 
         justify-content: center;
+        font-family: "Nunito", sans-serif;
     `,
     
     CadastroContainer : styled.div`
