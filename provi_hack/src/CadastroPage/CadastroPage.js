@@ -17,11 +17,6 @@ const CadastroPage = () => {
   const [cep, setCep] = useState("");
   const classes = makeStyles();
 
-  const navigate = useNavigate()
-  const goToHome = () => {
-    navigate("/")
-  }
-
   useEffect(() => {
     if (cep.length === 8) {
       handleLoardViaCep(cep, setForm, form)
@@ -74,8 +69,7 @@ const CadastroPage = () => {
 
   return (
     <DivSection>
-      <DivImage>
-      </DivImage>
+      <DivImage />
       <CadastroContainer>
         <FormContainer onSubmit={handleSubmit}>
           <FormTitle>Cadastre-se</FormTitle>
